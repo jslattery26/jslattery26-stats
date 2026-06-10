@@ -35,7 +35,7 @@ jobs:
         git config --global user.email "github-stats[bot]@jstrieb.github.io"
         # Push generated files to the generated branch
         git pull
-        git checkout generated || git checkout -b generated
+        git switch generated || git switch -c generated
 
     - name: Generate images
       run: |
